@@ -1,0 +1,129 @@
+:root {
+    --lightColor:lavenderblush;
+    --highlightColor: deeppink;
+    --darkColor: black;
+    --subDarkColor: dimgray;
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background:var(--lightColor);
+  
+  }
+  
+  body {
+    padding: 20px;
+    margin:0;
+    
+  }
+  
+  form {
+    width: 650px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    border: none;
+    background:white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  h1 {
+    color: var(--darkColor);
+    margin-bottom: -15px;
+  }
+  h4,
+  label,
+  p {
+    color: var(--subDarkColor);
+  }
+  
+  .formElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding:25px;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input:not([type = "checkbox"]) {
+    width: 400px;
+    border:none;
+    border-bottom: 1.5px solid var(--highlightColor);
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  input:not([type = "checkbox"]):focus {
+    outline: none;
+  }
+  
+  .checkGroup,
+  .headerText {
+    width: 410px;
+  }
+  .headerText {
+    text-align: left;
+  }
+  
+  .checkGroup {
+    margin-bottom:25px;
+  }
+  
+  strong {
+    color: var(--highlightColor);
+    cursor:pointer;
+  }
+  
+  .header {
+    width: 410px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  button {
+    width: 350px;
+    height: 40px ;
+    border: none;
+    border-radius: 25px;
+    color:white;
+    font-weight: bold;
+    background: var(--highlightColor);
+  }
+  
+  .error {
+    width:400px;
+    padding: 10px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+  }
+  
+  input:focus:invalid {
+    background: #ff7a7a;
+  }
+  
+  .checkmark {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  
+  

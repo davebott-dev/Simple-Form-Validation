@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <form novalidate>
+    <div class="header">
+      <div class="headerText">
+        <h1>Welcome to Dribble™</h1>
+        <h4>Complete the form to start dribbling!</h4>
+      </div>
+      <div class="headerIcon">
+        <img src="img/basketball.png" alt="basketball icon" width="70px">
+      </div>
+
+    </div>
+
+    <div class="formElements">
+
+      <div class="formGroup">
+        <label for="name">Full Name:</label>
+        <div class="inputGroup">
+          <input type="text" id="name" name="name" required>
+          <img src="img/checkmark.png" class="checkmark" id="check1" width="25px">
+        </div>
+        <span class="error" id="nameError" aria-live="polite"></span>
+
+      </div>
+
+      <div class="formGroup">
+        <label for="country">Country:</label>
+        <div class="inputGroup">
+          <input type="text" id="country" name="country" required>
+          <img src="img/checkmark.png" class="checkmark" id="check2" width="25px">
+        </div>
+        <span class="error" id="countryError" aria-live="polite"></span>
+      </div>
+
+      <div class="formGroup">
+        <label for="zip">Zip code:</label>
+        <div class="inputGroup">
+          <input type="text" id="zip" name="zip" pattern="^\d{5}" required>
+          <img src="img/checkmark.png" class="checkmark" id="check3" width="25px">
+        </div>
+        <span class="error" id="zipError" aria-live="polite"></span>
+      </div>
+
+      <div class="formGroup">
+        <label for="username">Username:</label>
+        <div class="inputGroup">
+          <input type="text" id="username" name="username" minlength="6" required>
+          <img src="img/checkmark.png" class="checkmark" id="check4" width="25px">
+        </div>
+        <span class="error" id="userError" aria-live="polite"></span>
+      </div>
+
+      <div class="formGroup">
+        <label for="email">Email:</label>
+        <div class="inputGroup">
+          <input type="email" id="email" name="email" required>
+          <img src="img/checkmark.png" class="checkmark" id="check5" width="25px">
+        </div>
+        <span class="error" id="emailError" aria-live="polite"></span>
+      </div>
+
+      <div class="formGroup">
+        <label for="password">Password:</label>
+        <div class="inputGroup">
+          <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+          <img src="img/checkmark.png" class="checkmark" id="check6" width="25px">
+        </div>
+        <span class="error" id="passwordError" aria-live="polite"></span>
+      </div>
+
+      <div class="formGroup">
+        <label for="confirmPassword">Confirm Password:</label>
+        <div class="inputGroup">
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+          <img src="img/checkmark.png" class="checkmark" id="check7" width="25px">
+        </div>
+        <span class="error" id="confirmPasswordError" aria-live="polite"></span>
+      </div>
+
+      <div class="checkGroup">
+        <input type="checkbox" id="agree" name="agree" value="agree" required>
+        <label for="agree">I agree with the website's <strong>Terms and Conditions</strong></label>
+        <span class="error" id="agreeError" aria-live="polite"></span>
+      </div>
+
+      <button id="submitBtn">Sign up</button>
+
+      <p>Already a member? <strong>Sign in</strong></p>
+    </div>
+
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
